@@ -18,3 +18,5 @@ seaborn
 streamlit
 streamlit-folium
 xgboost
+numpy>=1.24
+setuptools<58
