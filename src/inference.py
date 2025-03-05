@@ -8,10 +8,12 @@ from hsfs.feature_store import FeatureStore
 import src.config as config
 from src.data_utils import transform_ts_data_info_features
 
+HOPSWORKS_API_KEY = "11Pnc4YExMWVAIq0.11oLgfRGa7dwpPvQkiu6SA0zwpSAhSQjJ0mSgLdg2wKemRB7roS6culWyM51O3x6"
+HOPSWORKS_PROJECT_NAME = "nyc_taxi_proj"
 
 def get_hopsworks_project() -> hopsworks.project.Project:
     return hopsworks.login(
-        project=config.HOPSWORKS_PROJECT_NAME, api_key_value=config.HOPSWORKS_API_KEY
+        project = HOPSWORKS_PROJECT_NAME, api_key_value = HOPSWORKS_API_KEY
     )
 
 
